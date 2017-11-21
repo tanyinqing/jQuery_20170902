@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script>
+        $(function () {
+//            $(':input').css('background','#f00');
+//           $(':submit').css('background','#f00');
+//           $(':enabled').css('background','#f00');
+//           $(':selected').css('font-size','3em');
+           $(':checked').hide();
+        })
+    </script>
+</head>
+<!--
+:input	$(":input")	所有 <input> 元素
+:text	$(":text")	所有 type="text" 的 <input> 元素
+:password	$(":password")	所有 type="password" 的 <input> 元素
+:radio	$(":radio")	所有 type="radio" 的 <input> 元素
+:checkbox	$(":checkbox")	所有 type="checkbox" 的 <input> 元素
+:submit	$(":submit")	所有 type="submit" 的 <input> 元素
+:reset	$(":reset")	所有 type="reset" 的 <input> 元素
+:button	$(":button")	所有 type="button" 的 <input> 元素
+:image	$(":image")	所有 type="image" 的 <input> 元素
+:file	$(":file")	所有 type="file" 的 <input> 元素
+-->
+<body>
+<form action="">
+    <input type="text" placeholder="USERNAME" value="" ></input>   <br>
+    <input type="password" placeholder="password" value="" disabled></input>   <br>
+    <input type="radio" name="garden" checked>M
+    <input type="radio" name="garden" >F <br>
+    <select multiple>
+        <option value="">A</option>
+        <option value="">B</option>
+        <option value="" selected>C</option>
+    </select>
+    <input type="submit" value="SUBMIT">
+
+</form>
+</body>
+</html>

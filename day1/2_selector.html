@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script>
+        $(function () {
+            $(".intro.demo").click(function () {
+                $(this).slideUp(3000);
+            })
+            
+        })
+    </script>
+</head>
+<!--
+jQuery 选择器  http://w3school.com.cn/jquery/jquery_ref_selectors.asp
+.class.class	$(".intro.demo")	所有 class="intro" 且 class="demo" 的元素
+-->
+<body>
+<div class="intro demo">div...</div>
+<span>span</span>
+</body>
+</html>
