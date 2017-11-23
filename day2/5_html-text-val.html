@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script>
+        $(function () {
+            $('button').click(function () {
+              /*  $('div').html('<h1>h1..</h1>')//接收h5
+                $('div').text('<h1>h1..</h1>')//不接收h5
+                $('input').val("Tom");*/
+              console.log($('button').html());
+              console.log($('button').text());
+              console.log($('input').val());
+            })
+        })
+    </script>
+</head>
+<body>
+<pre>
+    有参数就是设置的意思 没有参数就是获取的意思
+    html()
+    text()
+    val() 和表单控件有关
+</pre>
+<div>
+    <h1>headline...</h1>
+</div>
+<input type="text" value="jom"><br>
+<button>Button</button>
+</body>
+</html>

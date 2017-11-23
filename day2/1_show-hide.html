@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    #box1{
+        height: 50px;
+        background: lightblue;
+    }
+        #box2{
+            height: 200px;
+            background: #900;
+        }
+    </style>
+    <script src="../js/jquery-3.2.1.js"></script>
+
+    <script>
+        $(function () {
+            $('#box1').click(function () {
+//                $('#box2').toggle('slow');
+//                $('#box2').toggle('fast');
+                $('#box2').toggle(5);
+            })
+        })
+    </script>
+
+</head>
+<body>
+<div id="box1"></div>
+<div id="box2"></div>
+
+</body>
+</html>

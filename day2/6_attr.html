@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script>
+        //一个参数是获取  二个参数是设置
+        $(function () {
+        console.log($('div').attr('style'));
+        console.log($('div').attr('title'));
+        console.log($('div').attr('style','color:blue'));
+        })
+    </script>
+</head>
+<body>
+<div style="color: red;" title="test...">div...</div>
+</body>
+</html>

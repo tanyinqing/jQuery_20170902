@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            color: red;
+            font-size: 3em;
+        }
+    </style>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script>
+        $(function () {
+           /* $('div').append('append...')//追加内容前面和后面
+            $('div').prepend('prepend...');
+            $('div').before('before...');//after追加到元素后面 before追加到元素前面
+            $('div').after('after...');//after追加到元素后面 before追加到元素前面*/
+
+           $('<span>appendto...</span>').appendTo($('div'))  //前面添加元素
+           $('<span>prependTo...</span>').prependTo($('div'))
+           $('<span>insertAfter...</span>').insertAfter($('div'))
+           $('<span>insertBefore...</span>').insertBefore($('div'))
+        })
+    </script>
+</head>
+<body>
+<div>div..</div>
+</body>
+</html>
