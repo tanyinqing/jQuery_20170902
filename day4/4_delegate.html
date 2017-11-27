@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script>
+        $(function () {
+         /*  $('div').delegate('p','click',function () {
+               $(this).hide();
+           })*/
+         $('button').click(function () {
+             $('p').after('<p>p..</p>')
+         })
+         /*   $('p').click(function () {
+                $(this).hide();
+            });
+            $('button').click(function () {
+                $('p').toggle();
+            });*/
+         $('div').on('click','p',function () {
+             $(this).fadeOut();
+         })
+        })
+    </script>
+</head>
+<!--点击父类中的某一个元素  代理事件 给未来元素添加事件-->
+<body>
+<div>
+    <p>p1...</p>
+    <p>p2...</p>
+    <p>p3...</p>
+    <button>Button</button>
+</div>
+</body>
+</html>

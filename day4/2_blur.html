@@ -6,14 +6,18 @@
     <script src="../js/jquery-3.2.1.js"></script>
     <script>
         $(function () {
+            //触发、或将函数绑定到指定元素的 blur 事件
             $('input').blur(function () {
-
+              if (true){
+                  $('span').text("Email already exist").css('color','#f00')
+              }
             })
         })
     </script>
 </head>
-<!--点击父类中的某一个元素  代理事件 给未来元素添加事件-->
+<!--事件控件失去焦点-->
 <body>
-<div></div>
+<input type="text">
+<span></span>
 </body>
 </html>
