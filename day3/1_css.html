@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .test{
+            height: 100px;
+            background: #990000;
+        }
+    </style>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script>
+        $(function () {
+            $('button').click(function () {
+                //     $('div').addClass('test')
+                //    $('div').removeClass('test')
+                  $('div').toggleClass('test')
+                  $('pre').css({'background':'#ddd','color':'#f00'})
+                console.log($('pre').css('background'));// 取得样式的属性
+            })
+
+        })
+    </script>
+</head>
+<!--jQuery - 获取并设置 CSS 类-->
+<body>
+<pre>
+    addClass();//添加样式
+    removeClass();//去掉样式
+    toggleClass() //切换样式
+    css();//修改样式
+</pre>
+<div>div...</div>
+<button>Button</button>
+</body>
+</html>

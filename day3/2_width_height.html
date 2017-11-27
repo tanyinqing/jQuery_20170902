@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            background: dodgerblue;
+            padding: 20px;
+            border: 10px dashed #990000;
+            margin: 50px;
+            width: 200px;
+            height: 100px;
+        }
+
+    </style>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script>
+        $(function () {
+            var div = $('div');
+            console.log(div.width());//内容部分 extract varable:ctrk+alt+v 抽取变量
+            console.log(div.height());//内容部分
+                console.log(div.innerWidth());//内容部分加内边距 extract varable:ctrk+alt+v 抽取变量
+                 console.log(div.innerHeight());//内容部分加内边距
+              console.log(div.outerWidth());//内容部分加内边距加边框extract varable:ctrk+alt+v 抽取变量
+                console.log(div.outerHeight());//内容部分加内边距加边框extract varable:ctrk+alt+v 抽取变量
+        console.log(div.outerWidth(true));//内容部分加内边距加边框和外边距 console.log(div.outerWidth());//extract varable:ctrk+alt+v 抽取变量
+         console.log(div.outerHeight(true));//内容部分加内边距加边框和外边距
+        })
+    </script>
+</head>
+<!--通过 jQuery，很容易处理元素和浏览器窗口的尺寸。-->
+<body>
+<div>div...</div>
+</body>
+</html>

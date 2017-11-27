@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script>
+        $(function () {
+     //     $('#C').siblings().addClass('red')//返回被选元素的所有同胞元素
+            //   $('#C').next().addClass('red')
+            //  $('#C').nextAll().addClass('red')//返回被选元素的所有跟随的同胞元素
+            //   $('#C').nextUntil("#E").addClass('red')//不包括E
+            //       $('#C').prev().addClass('red')
+                $('#C').prevUntil('#a').addClass('red')//包括A
+            //     $('#C').prevAll().addClass('red')
+        })
+    </script>
+</head>
+<!--jQuery 遍历 - 同胞-->
+<body>
+<ul>
+    <li id="A">A</li>
+    <li id="B">B</li>
+    <li id="C">C</li>
+    <li id="D">D</li>
+    <li id="E">E</li>
+</ul>
+</body>
+</html>

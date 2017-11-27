@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .border{
+            border: 1px solid red;
+        }
+    </style>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script>
+        $(function () {
+            //   $('#left').parent().addClass('border')//直接父类
+            // $('#left').parents().addClass('border')//所有父类 包括html body
+
+            //祖先中直到某个值的祖先不包括这个
+            //  $('#left').parentsUntil('#container').addClass('border')
+
+            //  $('#container').children().addClass('border')//直接子类
+            //  $('#container').find('*').addClass('border')//所有子类 直接的和间接的
+
+            //过滤所有选中子类
+          $('#container').find('#left').addClass('border')
+        })
+    </script>
+</head>
+<!--//dom的文档结构 也是树形结构-->
+<!--jQuery 遍历 - 祖先  和后代-->
+<body>
+<div id="container">
+<div id="header">header..</div>
+    <div id="content">
+        <div id="left">left</div>
+        <div id="rght">right</div>
+    </div>
+    <div id="footer">footer</div>
+</div>
+</body>
+</html>
